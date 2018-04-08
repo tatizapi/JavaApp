@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="683.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="exitBtn" layoutX="517.0" layoutY="563.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="39.0" prefWidth="41.0" text="Exit" />
+      <Label layoutX="14.0" layoutY="43.0" text="Program States identifiers:" />
+      <ListView fx:id="prgStatesIDs" layoutX="14.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="231.0" layoutY="43.0" text="Execution Stack: " />
+      <ListView fx:id="exeStackLV" layoutX="231.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="stepBtn" layoutX="395.0" layoutY="563.0" mnemonicParsing="false" onAction="#handleOneStepButton" prefHeight="45.0" prefWidth="89.0" text="Run one step" />
+      <Label layoutX="14.0" layoutY="14.0" text="Number of Program States:" />
+      <TextField fx:id="nrPrgStatesTF" layoutX="173.0" layoutY="10.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label layoutX="14.0" layoutY="282.0" text="Symbol Table:" />
+      <TableView fx:id="symbolTV" layoutX="14.0" layoutY="299.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="varSymTblColumn" prefWidth="75.0" text="Variable" />
+          <TableColumn fx:id="valSymTblColumn" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label layoutX="449.0" layoutY="43.0" text="Output:" />
+      <ListView fx:id="outputLV" layoutX="449.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="heapTV" layoutX="231.0" layoutY="299.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="addressHeapColumn" prefWidth="75.0" text="Address" />
+          <TableColumn fx:id="valHeapColumn" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <TableView fx:id="fileTV" layoutX="449.0" layoutY="299.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="idFileTableColumn" prefWidth="75.0" text="Identifier" />
+          <TableColumn fx:id="fnFileTableColumn" prefWidth="75.0" text="Filename" />
+        </columns>
+      </TableView>
+      <Label layoutX="231.0" layoutY="282.0" text="Heap:" />
+      <Label layoutX="449.0" layoutY="282.0" text="File Table:" />
+      <TableView fx:id="semaphoreTV" layoutX="14.0" layoutY="512.0" prefHeight="141.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="indexSmphColumn" prefWidth="75.0" text="Index" />
+          <TableColumn fx:id="valSmphColumn" prefWidth="75.0" text="Value" />
+            <TableColumn fx:id="listvalSmphColumn" prefWidth="108.0" text="List of values" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

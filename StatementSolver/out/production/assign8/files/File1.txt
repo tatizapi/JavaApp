@@ -1,0 +1,71 @@
+Program State nr. 1
+EXESTACK:
+->  v = 1
+-> {fork(  v = 2 );fork(  v = 3 )}
+SYMTABLE:
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {fork(  v = 2 );fork(  v = 3 )}
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> fork(  v = 2 )
+-> fork(  v = 3 )
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> fork(  v = 3 )
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 10
+EXESTACK:
+->  v = 2
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 10
+EXESTACK:
+SYMTABLE:
+-> Key: v, Value: 2
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 100
+EXESTACK:
+->  v = 3
+SYMTABLE:
+-> Key: v, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------

@@ -1,0 +1,146 @@
+Program State nr. 1
+EXESTACK:
+-> { a = 1; b = 2}
+-> {c=a?100:200;{print(c);{c=b - 2?100:200;print(c)}}}
+SYMTABLE:
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+->  a = 1
+->  b = 2
+-> {c=a?100:200;{print(c);{c=b - 2?100:200;print(c)}}}
+SYMTABLE:
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+->  b = 2
+-> {c=a?100:200;{print(c);{c=b - 2?100:200;print(c)}}}
+SYMTABLE:
+-> Key: a, Value: 1
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {c=a?100:200;{print(c);{c=b - 2?100:200;print(c)}}}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> c=a?100:200
+-> {print(c);{c=b - 2?100:200;print(c)}}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+->  c = 100
+-> {print(c);{c=b - 2?100:200;print(c)}}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {print(c);{c=b - 2?100:200;print(c)}}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 100
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> print(c)
+-> {c=b - 2?100:200;print(c)}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 100
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {c=b - 2?100:200;print(c)}
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 100
+OUTPUT:
+-> 100
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> c=b - 2?100:200
+-> print(c)
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 100
+OUTPUT:
+-> 100
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+->  c = 200
+-> print(c)
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 100
+OUTPUT:
+-> 100
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> print(c)
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 200
+OUTPUT:
+-> 100
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+SYMTABLE:
+-> Key: a, Value: 1
+-> Key: b, Value: 2
+-> Key: c, Value: 200
+OUTPUT:
+-> 100
+-> 200
+HEAP:
+FILETABLE:
+------------------------------------------

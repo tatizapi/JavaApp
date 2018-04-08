@@ -1,0 +1,143 @@
+Program State nr. 1
+EXESTACK:
+-> openRFile(var_f, E:\github Projects\Projects\StatementSolver\src\files\test.txt)
+-> {{readFile( var_f,var_c);print(var_c)};{IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}}
+SYMTABLE:
+OUTPUT:
+HEAP:
+FILETABLE:
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {{readFile( var_f,var_c);print(var_c)};{IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}}
+SYMTABLE:
+-> Key: var_f, Value: 0
+OUTPUT:
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {readFile( var_f,var_c);print(var_c)}
+-> {IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}
+SYMTABLE:
+-> Key: var_f, Value: 0
+OUTPUT:
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> readFile( var_f,var_c)
+-> print(var_c)
+-> {IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}
+SYMTABLE:
+-> Key: var_f, Value: 0
+OUTPUT:
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> print(var_c)
+-> {IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 15
+OUTPUT:
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0));closeRFile(var_f)}
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 15
+OUTPUT:
+-> 15
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> IF(var_c) THEN({readFile( var_f,var_c);print(var_c)})ELSE(print(0))
+-> closeRFile(var_f)
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 15
+OUTPUT:
+-> 15
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> {readFile( var_f,var_c);print(var_c)}
+-> closeRFile(var_f)
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 15
+OUTPUT:
+-> 15
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> readFile( var_f,var_c)
+-> print(var_c)
+-> closeRFile(var_f)
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 15
+OUTPUT:
+-> 15
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> print(var_c)
+-> closeRFile(var_f)
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 50
+OUTPUT:
+-> 15
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+-> closeRFile(var_f)
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 50
+OUTPUT:
+-> 15
+-> 50
+HEAP:
+FILETABLE:
+-> Key: 0, Value: E:\github Projects\Projects\StatementSolver\src\files\test.txt
+------------------------------------------
+Program State nr. 1
+EXESTACK:
+SYMTABLE:
+-> Key: var_f, Value: 0
+-> Key: var_c, Value: 50
+OUTPUT:
+-> 15
+-> 50
+HEAP:
+FILETABLE:
+------------------------------------------
